@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f8f8f8;
+  color: #29292e;
+}
+
+:root {
+  --color-main: #835afd;
+  --color-font: #fff;
+  --color-border: #a8a8b3;
+  --color-button-google: #ea4335;
+
+  --font-size: 1.5rem;
+  --font-size-separator: 0.8rem;
+  --font-height: 2rem;
+}
