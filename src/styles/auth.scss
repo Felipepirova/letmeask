@@ -30,7 +30,7 @@
     font-size: var(--font-size);
     line-height: var(--font-height);
     margin-top: 1rem;
-    color: var(--color-font);
+    color: var(--color-border);
   }
 
   main {
@@ -55,6 +55,11 @@
       align-self: center;
     }
 
+    h2 {
+      font-size: 1.5rem;
+      margin: 4rem 0 1.5rem;
+    }
+
     form {
       input {
         height: 3.1rem;
@@ -71,6 +76,15 @@
         width: 100%;
       }
     }
+    p {
+      font-size: 0.8rem;
+      color: var(--color-border);
+      margin-top: 1rem;
+
+      a {
+        color: var(--color-link);
+      }
+    }
   }
 
   .create-room {
@@ -80,6 +94,7 @@
     font-weight: 500;
     background: var(--color-button-google);
     color: var(--color-font);
+    text-decoration: none;
 
     display: flex;
     justify-content: center;

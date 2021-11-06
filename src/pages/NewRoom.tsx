@@ -1,13 +1,9 @@
 import illustrationImg from '../assets/images/illustration.svg'
 import logoImg from '../assets/images/logo.svg'
-import googleIconImg from '../assets/images/google-icon.svg'
 import "../styles/auth.scss"
 import {Button} from "../components/Button"
-import { Link } from 'react-router-dom'
 
-
-export function Home(){
-
+export function NewRoom(){
   return (
     <div id="page-auth">
       <aside>
@@ -18,19 +14,15 @@ export function Home(){
       <main>
         <div className="main-content">
           <img src={logoImg} alt="Let Me Ask" />
-    
-          <Link to="/room/new" className="create-room">
-            <img src={googleIconImg} alt="Logo do Google" />
-            Cria sua Sala com o Google
-          </Link>
-          <div className="separator"> Ou entre em uma Sala</div>
+          <h2>Crie uma nova Sala</h2>
           <form action="">
             <input type="text" placeholder="Digite o código da Sala" />
             <Button type="submit">
-              Entrar na sala
+              Criar Sala
             </Button>
-          
+            <p> Quer entrar em uma sala Existente? <a href="#">Clique aqui</a></p>
           </form>
+          
         </div>
       </main>
     </div>

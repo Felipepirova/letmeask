@@ -1,8 +1,16 @@
+import { BrowserRouter as Router, Routes, Route, Link, BrowserRouter } from 'react-router-dom';
+
 import {Home} from './pages/Home'
+import {NewRoom} from './pages/NewRoom'
 
 function App() {
   return (
-    <Home/>
+   <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Home/>}/>
+      <Route path="/room/new" element={<NewRoom/>}/>
+    </Routes>
+   </BrowserRouter>
   );
 }
 
